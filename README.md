@@ -5,8 +5,6 @@ This is a small compiler created with java to scan, parse and evaluate a small l
 
 Provide a simple gui interface where you could insert the expression that you want to compile.
 
-Any char should have one space before and after (suggest to remove this are welcome)
-
 ## Expression allowed:
 
 * sums
@@ -25,8 +23,9 @@ Simply clone or download the repo and run `Main.class` inside `src` folder. Ther
 
 Remember that identifier on the right of = should have a $ before.
 
-``` ( ( 3 + 5 ) / 2 ) * 4 ^ 3
+``` 
+  ((3 + 5) / 2 ) * 4^3
   x = 5
-  y = $ x * 2
-  x = 5 , y = $ x + 3 , z = $ y ^ 3
+  y = $x * 2
+  x = 5,y = $x + 3,z = $y^3
 ```

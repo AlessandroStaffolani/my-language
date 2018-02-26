@@ -8,9 +8,9 @@ public interface ExpVisitor {
 
     void visit(MinusExp e);
 
-    void visit(TimesExp e);
+    void visit(MultiplyExp e);
 
-    void visit(DivExp e);
+    void visit(DivideExp e);
 
     void visit(PotExp e);
 

@@ -32,12 +32,12 @@ public class TreeVisitor implements ExpVisitor {
     }
 
     @Override
-    public void visit(TimesExp e) {
+    public void visit(MultiplyExp e) {
         visitOpExp(e);
     }
 
     @Override
-    public void visit(DivExp e) {
+    public void visit(DivideExp e) {
         visitOpExp(e);
     }
 

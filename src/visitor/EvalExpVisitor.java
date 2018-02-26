@@ -29,7 +29,7 @@ public class EvalExpVisitor implements ExpVisitor {
     }
 
     @Override
-    public void visit(TimesExp e) {
+    public void visit(MultiplyExp e) {
         e.left().accept(this);
         long arg1 = getEvaluation();
         e.right().accept(this);
@@ -38,7 +38,7 @@ public class EvalExpVisitor implements ExpVisitor {
     }
 
     @Override
-    public void visit(DivExp e) {
+    public void visit(DivideExp e) {
         e.left().accept(this);
         long arg1 = getEvaluation();
         e.right().accept(this);

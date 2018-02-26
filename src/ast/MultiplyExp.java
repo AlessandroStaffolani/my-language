@@ -2,14 +2,14 @@ package ast;
 
 import visitor.ExpVisitor;
 
-public class DivExp extends OpExp {
+public class MultiplyExp extends OpExp {
 
-    public DivExp(Exp l, Exp r) {
+    public MultiplyExp(Exp l, Exp r) {
         super(l, r);
     }
 
     public String myOp() {
-        return ":";
+        return "*";
     }
 
     public void accept(ExpVisitor v) {

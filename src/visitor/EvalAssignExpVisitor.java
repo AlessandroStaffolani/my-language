@@ -70,7 +70,7 @@ public class EvalAssignExpVisitor implements ExpAssignVisitor, ExpSeqVisitor {
     }
 
     @Override
-    public void visit(TimesExp e) {
+    public void visit(MultiplyExp e) {
         e.left().accept(this);
         long arg1 = (Long) getEvaluation();
         e.right().accept(this);
@@ -79,7 +79,7 @@ public class EvalAssignExpVisitor implements ExpAssignVisitor, ExpSeqVisitor {
     }
 
     @Override
-    public void visit(DivExp e) {
+    public void visit(DivideExp e) {
         e.left().accept(this);
         long arg1 = (Long) getEvaluation();
         e.right().accept(this);

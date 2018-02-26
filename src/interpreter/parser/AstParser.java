@@ -3,7 +3,6 @@ package interpreter.parser;
 import ast.*;
 import interpreter.lexer.IllegalToken;
 import interpreter.lexer.MyScanner;
-import interpreter.lexer.MyStupidScanner;
 import interpreter.lexer.Token;
 
 import java.util.ArrayList;
@@ -105,7 +104,7 @@ public class AstParser {
                     currentToken = scanner.getNextToken();
                     Exp nextFactor = this.parsePot();
                     if (nextFactor != null) {
-                        factorSeq = new TimesExp(factorSeq, nextFactor);
+                        factorSeq = new MultiplyExp(factorSeq, nextFactor);
                     } else {
                         throw new IllegalToken(currentToken);
                     }
@@ -113,7 +112,7 @@ public class AstParser {
                     currentToken = scanner.getNextToken();
                     Exp nextFactor = this.parsePot();
                     if (nextFactor != null) {
-                        factorSeq = new DivExp(factorSeq, nextFactor);
+                        factorSeq = new DivideExp(factorSeq, nextFactor);
                     } else {
                         throw new IllegalToken(currentToken);
                     }

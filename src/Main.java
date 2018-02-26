@@ -27,7 +27,7 @@ public class Main {
 
 
 
-        /*String[] expressions = {
+        String[] expressions = {
                 "x = 5 + 1",
                 "x=44 - 3",
                 "ciao = $x + 78",
@@ -42,7 +42,7 @@ public class Main {
                 token = scanner.getNextToken();
             }
             System.out.println();
-        }*/
+        }
 
     }
 

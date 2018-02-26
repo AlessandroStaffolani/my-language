@@ -18,6 +18,7 @@ public class TreeVisitor implements ExpVisitor {
         node.add(getResult());
         e.right().accept(this);
         node.add(getResult());
+
         root = node;
     }
 
